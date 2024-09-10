@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCast AI - Talk to Your Favorite Celebrities</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.web.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '400% 400%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '400% 400%',
+                                'background-position': 'right center'
+                            },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        * {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed w-screen min-h-screen z-10" style="background-image: url('dark-denim-3.png')"  alt=""></div>
+
+    <div class="fixed inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-700 animate-gradient-x"></div>
+    <div class="relative z-10">
+        <header class="bg-white bg-opacity-10 backdrop-blur-md">
+            <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+                <img src="logo.png" alt="" class="w-20 h-20">
+                <div class="text-3xl font-bold text-white">SoundCast.AI</div>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 text-white">
+            <!-- Hero Section -->
+            <section class="text-center py-16 relative">
+                <div class="w-full flex justify-center">
+                    <div
+                        class="flex mb-3 relative bg-white bg-opacity-10 rounded-lg backdrop-blur-sm rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                        <p class="text-gray-50 mr-2">
+                            Announcing our next round of funding.
+                        </p>
+                        <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0"
+                                aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+                <h1 class="text-5xl font-bold mb-6">Talk to Your Favorite Celebrities</h1>
+                <p class="text-xl mb-8">Experience real-time AI phone calls with celebrity voices trained on authentic
+                    data.</p>
+                <button onclick="scrollToWaitlist()"
+                    class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold text-lg hover:bg-opacity-90 transition duration-300">
+                    Get Started
+                </button>
+            </section>
+
+            <!-- Features Section -->
+            <section class="py-20">
+                <h2 class="text-3xl font-bold mb-10 text-center">Key Features</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                        <h3 class="text-xl font-semibold mb-4">Authentic Voices</h3>
+                        <p>AI models trained on real celebrity data from YouTube and other sources.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                        <h3 class="text-xl font-semibold mb-4">Real-time Conversations</h3>
+                        <p>Engage in live, dynamic phone calls with AI-powered celebrity voices.</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                        <h3 class="text-xl font-semibold mb-4">Customizable Experience</h3>
+                        <p>Choose from a wide range of celebrities and conversation topics.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="py-20">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-xl font-normal mb-4 text-center">HOW SoundCast WORKS</h2>
+                    <h3 class="text-5xl font-bold mb-16 text-center">Three steps to celebrity conversations</h3>
+
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0">
+                        <div class="flex flex-col items-center text-center max-w-xs">
+                            <div class="text-8xl font-bold mb-4 text-purple-300 transform -skew-x-12">1</div>
+                            <h4 class="text-2xl font-semibold mb-2">Choose your celebrity</h4>
+                            <p class="text-purple-200">Select from our extensive list of AI-powered celebrity voices for
+                                your call experience.</p>
+                        </div>
+                        <div class="hidden md:block">
+                            <svg width="60" height="20" viewBox="0 0 60 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10H57M57 10L48 1M57 10L48 19" stroke="#D8B4FE" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center text-center max-w-xs">
+                            <div class="text-8xl font-bold mb-4 text-purple-300 transform -skew-x-12">2</div>
+                            <h4 class="text-2xl font-semibold mb-2">Customize your call</h4>
+                            <p class="text-purple-200">Set preferences for conversation topics and duration to
+                                personalize your experience.</p>
+                        </div>
+                        <div class="hidden md:block">
+                            <svg width="60" height="20" viewBox="0 0 60 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10H57M57 10L48 1M57 10L48 19" stroke="#D8B4FE" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center text-center max-w-xs">
+                            <div class="text-8xl font-bold mb-4 text-purple-300 transform -skew-x-12">3</div>
+                            <h4 class="text-2xl font-semibold mb-2">Enjoy the conversation</h4>
+                            <p class="text-purple-200">Receive a call and engage in a real-time, AI-driven dialogue with
+                                your chosen celebrity voice.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="py-20">
+                <h2 class="text-3xl font-bold mb-10 text-center">How It Works</h2>
+                <ol class="list-decimal list-inside space-y-4 max-w-2xl mx-auto">
+                    <li class="text-lg">Select your favorite celebrity from our extensive list.</li>
+                    <li class="text-lg">Our AI collects and analyzes real data to create an authentic voice model.</li>
+                    <li class="text-lg">Receive a phone call from the AI-powered celebrity voice.</li>
+                    <li class="text-lg">Engage in a real-time conversation on various topics.</li>
+                </ol>
+            </section> -->
+
+            <!-- Waitlist Section -->
+            <section id="waitlist" class="py-20">
+                <h2 class="text-3xl font-bold mb-6 text-center">Join the Waitlist</h2>
+                <p class="text-center mb-8">Be among the first to experience celebrity AI calls. Sign up for early
+                    access!</p>
+                <form onsubmit="handleSubmit(event)" class="max-w-md mx-auto flex gap-4">
+                    <input type="email" placeholder="Enter your email" required
+                        class="flex-grow bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit"
+                        class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+                        Join Now
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="container mx-auto px-4 py-8 text-center text-white">
+            <p>&copy; 2024 SoundCast.AI. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function scrollToWaitlist() {
+            document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            console.log('Email submitted:', email);
+            alert('Thanks for joining our waitlist!');
+            event.target.reset();
+        }
+    </script>
+</body>
+
+</html>

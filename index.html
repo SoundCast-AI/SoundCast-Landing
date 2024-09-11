@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundCast AI - Talk to Your Favorite Celebrities</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +46,7 @@
 </head>
 
 <body>
-    <div class="fixed w-screen min-h-screen z-10" style="background-image: url('images/dark-denim-3.png')"  alt=""></div>
+    <div class="fixed w-screen min-h-screen z-10" style="background-image: url('images/dark-denim-3.png')" alt=""></div>
 
     <div class="fixed inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-700 animate-gradient-x"></div>
     <div class="relative z-10">
@@ -73,7 +75,7 @@
                     data.</p>
                 <button onclick="scrollToWaitlist()"
                     class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold text-lg hover:bg-opacity-90 transition duration-300">
-                    Get Started
+                    Join Waitlist
                 </button>
             </section>
 
@@ -152,13 +154,18 @@
                 <h2 class="text-3xl font-bold mb-6 text-center">Join the Waitlist</h2>
                 <p class="text-center mb-8">Be among the first to experience celebrity AI calls. Sign up for early
                     access!</p>
-                <form onsubmit="handleSubmit(event)" class="max-w-md mx-auto flex gap-4">
-                    <input type="email" placeholder="Enter your email" required
+                <form action="https://formspree.io/f/mdknvowk" method="POST"
+                    class="max-w-lg mx-auto flex flex-wrap gap-4 justify-center">
+                    <input name="email" type="email" placeholder="Enter your email" required
                         class="flex-grow bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white">
-                    <button type="submit"
-                        class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
-                        Join Now
-                    </button>
+                    <div class="w-full flex mx-auto gap-4">
+                        <input name="celebrity" type="text" placeholder="Celebrity you would like to see" required
+                            class="flex-grow bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white">
+                        <button type="submit"
+                            class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+                            Join Now
+                        </button>
+                    </div>
                 </form>
             </section>
         </main>

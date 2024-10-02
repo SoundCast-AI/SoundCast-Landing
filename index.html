@@ -1,197 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoundCast.AI - Elevate Your Engagement, Amplify Your Reach</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.web.js"></script>
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        'gradient-x': 'gradient-x 15s ease infinite',
-                    },
-                    keyframes: {
-                        'gradient-x': {
-                            '0%, 100%': {
-                                'background-size': '400% 400%',
-                                'background-position': 'left center'
-                            },
-                            '50%': {
-                                'background-size': '400% 400%',
-                                'background-position': 'right center'
-                            },
-                        },
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              "gradient-x": "gradient-x 15s ease infinite",
             },
-        }
+            keyframes: {
+              "gradient-x": {
+                "0%, 100%": {
+                  "background-size": "400% 400%",
+                  "background-position": "left center",
+                },
+                "50%": {
+                  "background-size": "400% 400%",
+                  "background-position": "right center",
+                },
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
-        * {
-            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-        }
+      * {
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="fixed w-screen min-h-screen z-10" style="background-image: url('images/dark-denim-3.png')" alt=""></div>
+  <body>
+    <div
+      class="fixed w-screen min-h-screen z-10"
+      style="background-image: url('images/dark-denim-3.png')"
+      alt=""
+    ></div>
 
-    <div class="fixed inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-700 animate-gradient-x"></div>
+    <div
+      class="fixed inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-700 animate-gradient-x"
+    ></div>
     <div class="relative z-10">
-        <header class="bg-white bg-opacity-10 backdrop-blur-md">
-            <div class="container mx-auto px-4 py-2 flex items-center justify-between">
-                <img src="images/logo.png" alt="" class="w-20 h-20">
-                <div class="text-3xl font-bold text-white">SoundCast.AI</div>
+      <header class="bg-white bg-opacity-10 backdrop-blur-md">
+        <div
+          class="container mx-auto px-4 py-2 flex items-center justify-between"
+        >
+          <img src="images/logo.png" alt="" class="w-20 h-20" />
+          <div class="text-3xl font-bold text-white">SoundCast.AI</div>
+        </div>
+      </header>
+
+      <main class="container mx-auto px-4 text-white">
+        <!-- Hero Section -->
+        <section class="text-center py-16 relative">
+          <div class="w-full flex justify-center">
+            <div
+              class="flex mb-3 relative bg-white bg-opacity-10 rounded-lg backdrop-blur-sm rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            >
+              <p class="text-gray-50 mr-2">
+                Transform your influence with an AI replica that speaks just
+                like you.
+              </p>
+              <a
+                href="https://docs.google.com/presentation/d/14XiQ0H6VGfsi8UnqTYT7gQAe8uX4aH6ZTGw_Bv1uuhA/edit#slide=id.p"
+                target="_blank"
+                class="font-semibold text-indigo-600"
+                ><span class="absolute inset-0" aria-hidden="true"></span>Read
+                more <span aria-hidden="true">&rarr;</span></a
+              >
             </div>
-        </header>
+          </div>
+          <div class="w-full flex flex-col items-center">
+            <h1 class="text-5xl font-bold mb-6">
+              Amplify Your Voice, Engage the World
+            </h1>
+            <p class="text-lg w-[80%] mb-8">
+              Let your fans interact with "you" on their favorite platforms
+              while you get paid for every conversation.
+            </p>
+          </div>
+          <button
+            onclick="scrollToWaitlist()"
+            class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold text-lg hover:bg-opacity-90 transition duration-300"
+          >
+            Create Your AI Now
+          </button>
+        </section>
 
-        <main class="container mx-auto px-4 text-white">
-            <!-- Hero Section -->
-            <section class="text-center py-16 relative">
-                <div class="w-full flex justify-center">
-                    <div
-                        class="flex mb-3 relative bg-white bg-opacity-10 rounded-lg backdrop-blur-sm rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                        <p class="text-gray-50 mr-2">
-                            Transform your influence with an AI replica that speaks just like you.
-                        </p>
-                        <a href="https://docs.google.com/presentation/d/14XiQ0H6VGfsi8UnqTYT7gQAe8uX4aH6ZTGw_Bv1uuhA/edit#slide=id.p" target="_blank" class="font-semibold text-indigo-600"><span class="absolute inset-0"
-                                aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-                    </div>
+        <!-- Features Section -->
+        <section class="py-10">
+          <h2 class="text-4xl font-bold mb-10 text-center">
+            Why Choose Soundcast AI?
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+              <h3 class="text-xl font-semibold mb-4">
+                Voice-Powered Engagement
+              </h3>
+              <p>
+                Give your fans the unique opportunity to speak with your AI in
+                your own voice and personality. True, engaging interactions.
+              </p>
+            </div>
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+              <h3 class="text-xl font-semibold mb-4">
+                Anywhere, Anytime Conversations
+              </h3>
+              <p>
+                Whether it's YouTube, Discord, Telegram, or our app, your AI is
+                there for your fans, keeping them engaged with you even when
+                you're not available.
+              </p>
+            </div>
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+              <h3 class="text-xl font-semibold mb-4">
+                Monetize Your Influence
+              </h3>
+              <p>
+                Turn fan interactions into an income stream. Your AI replica
+                earns revenue with every fan conversation, maximizing your reach
+                and earnings.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex justify-center mt-24">
+            <iframe
+              class=""
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/tmEgM6bhtZU?si=exU3dvNiOUVbBT9k"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-20">
+          <div class="container mx-auto px-4">
+            <p class="text-5xl font-bold mb-5 text-center">
+              How Soundcast AI Works
+            </p>
+            <p class="text-md mb-8 text-center mb-[120px]">
+              Let your fans interact with "you" on their favorite platforms
+              while you get paid for every conversation.
+            </p>
+
+            <div
+              class="flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0"
+            >
+              <div
+                class="flex flex-col items-center text-center max-w-xs gap-y-2"
+              >
+                <div
+                  class="text-8xl font-bold text-purple-300 transform -skew-x-12"
+                >
+                  1
                 </div>
-                <div class="w-full flex flex-col items-center">
-                    <h1 class="text-5xl font-bold mb-6">Amplify Your Voice, Engage the World</h1>
-                    <p class="text-lg w-[80%] mb-8">Let your fans interact with "you" on their favorite platforms while you get paid for every conversation.</p>
+                <h4 class="text-2xl font-semibold">Craft Your AI Persona</h4>
+                <p class="text-purple-200 text-center">
+                  Partner with us to build an AI that mimics your personality,
+                  style, and tone, making sure it's the real "you" fans will
+                  interact with.
+                </p>
+              </div>
+              <div class="hidden md:block">
+                <svg
+                  width="60"
+                  height="20"
+                  viewBox="0 0 60 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10H57M57 10L48 1M57 10L48 19"
+                    stroke="#D8B4FE"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex flex-col items-center text-center max-w-xs gap-y-2"
+              >
+                <div
+                  class="text-8xl font-bold text-purple-300 transform -skew-x-12"
+                >
+                  2
                 </div>
-                <button onclick="scrollToWaitlist()"
-                    class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold text-lg hover:bg-opacity-90 transition duration-300">
-                    Create Your AI Now
-                </button>
-            </section>
-
-            <!-- Features Section -->
-            <section class="py-10">
-                <h2 class="text-3xl font-bold mb-10 text-center">Why Choose Soundcast AI?</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                        <h3 class="text-xl font-semibold mb-4">Voice-Powered Engagement</h3>
-                        <p>Give your fans the unique opportunity to speak with your AI in your own voice and personality. True, engaging interactions.</p>
-                    </div>
-                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                        <h3 class="text-xl font-semibold mb-4">Anywhere, Anytime Conversations</h3>
-                        <p>Whether it's YouTube, Discord, Telegram, or our app, your AI is there for your fans, keeping them engaged with you even when you're not available.</p>
-                    </div>
-                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                        <h3 class="text-xl font-semibold mb-4">Monetize Your Influence</h3>
-                        <p>Turn fan interactions into an income stream. Your AI replica earns revenue with every fan conversation, maximizing your reach and earnings.</p>
-                    </div>
+                <h4 class="text-[23px] font-semibold">
+                  Engage Fans Across Platforms
+                </h4>
+                <p class="text-purple-200 text-center">
+                  Your AI replica will be available on YouTube, Discord,
+                  Telegram, and our own Soundcast app for seamless fan
+                  interactions.
+                </p>
+              </div>
+              <div class="hidden md:block">
+                <svg
+                  width="60"
+                  height="20"
+                  viewBox="0 0 60 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10H57M57 10L48 1M57 10L48 19"
+                    stroke="#D8B4FE"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <div
+                class="flex flex-col items-center text-center max-w-xs gap-y-2"
+              >
+                <div
+                  class="text-8xl font-bold text-purple-300 transform-skew-x-12"
+                >
+                  3
                 </div>
-                <div class="w-full flex justify-center mt-24">
-                    <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/tmEgM6bhtZU?si=exU3dvNiOUVbBT9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </section>
+                <h4 class="text-[23px] font-semibold">
+                  Earn Every Time Fans Connect
+                </h4>
+                <p class="text-purple-200 text-center">
+                  Monetize every interaction as fans engage with your AI,
+                  driving a new stream of income from your voice and persona.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <!-- How It Works Section -->
-            <section class="py-20">
-                <div class="container mx-auto px-4">
-                    <p class="text-5xl font-bold mb-5 text-center">How Soundcast AI Works</p>
-                    <p class="text-md mb-8 text-center mb-[120px]">Let your fans interact with "you" on their favorite platforms while you get paid for every conversation.</p>
+        <!-- Testimonials Section -->
 
+        <section class="py-20">
+          <h2 class="text-4xl font-bold mb-10 text-center">
+            What Personalities Are Saying
+          </h2>
+          <p class="text-center mb-8 text-center">Real stories from influencers and creators who are transforming their influence with Soundcast AI.</p>
+          <div class="grid grid-cols-2">
+            <div class="p-2">
+                <p class="p-2 text-base">
+                 Soundcast AI helped me stay connected to my audience 24/7. My AI replica has not only deepened my fanbase, but it's also created a new income stream I never thought possible.
+                </p> 
+            <h2 class="text-center font-bold mt-2">— Popular YouTuber</h2>
+            </div>
+            <div class="p-2">
+                <p class="p-2 text-base">
+                 Soundcast AI helped me stay connected to my audience 24/7. My AI replica has not only deepened my fanbase, but it's also created a new income stream I never thought possible.
+                </p>
+            <h2 class="text-center font-bold mt-2">— Popular YouTuber</h2>
+            </div>
+          </div>
+        </section>
 
-                    <div class="flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0">
-                        <div class="flex flex-col items-center text-center max-w-xs">
-                            <div class="text-8xl font-bold mb-4 text-purple-300 transform -skew-x-12">1</div>
-                            <h4 class="text-2xl font-semibold mb-2">Craft Your AI Persona</h4>
-                            <p class="text-purple-200">Partner with us to build an AI that mimics your personality, style, and tone, making sure it's the real "you" fans will interact with.</p>
-                        </div>
-                        <div class="hidden md:block">
-                            <svg width="60" height="20" viewBox="0 0 60 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 10H57M57 10L48 1M57 10L48 19" stroke="#D8B4FE" stroke-width="2" />
-                            </svg>
-                        </div>
-                        <div class="flex flex-col items-center text-center max-w-xs">
-                            <div class="text-8xl font-bold mb-4 text-purple-300 transform -skew-x-12">2</div>
-                            <h4 class="text-2xl font-semibold mb-2">Engage Fans Across Platforms</h4>
-                            <p class="text-purple-200">Your AI replica will be available on YouTube, Discord, Telegram, and our own Soundcast app for seamless fan interactions.</p>
-                        </div>
-                        <div class="hidden md:block">
-                            <svg width="60" height="20" viewBox="0 0 60 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 10H57M57 10L48 1M57 10L48 19" stroke="#D8B4FE" stroke-width="2" />
-                            </svg>
-                        </div>
-                        <div class="flex flex-col items-center text-center max-w-xs">
-                            <div class="text-8xl font-bold mb-4 text-purple-300 transform -skew-x-12">3</div>
-                            <h4 class="text-2xl font-semibold mb-2">Earn Every Time Fans Connect</h4>
-                            <p class="text-purple-200">Monetize every interaction as fans engage with your AI, driving a new stream of income from your voice and persona.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <!-- Waitlist Section -->
+        <section id="waitlist" class="py-20">
+          <h2 class="text-3xl font-bold mb-6 text-center">
+            Bring Your Voice to Life Today
+          </h2>
+          <p class="text-center mb-8 text-center">
+            Start building your AI replica now and unlock a whole new way to
+            engage with your audience while earning for every interaction.
+          </p>
+          <form
+            action="https://formspree.io/f/mdknvowk"
+            method="POST"
+            class="max-w-lg mx-auto flex flex-wrap gap-4 justify-center"
+          >
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+              class="flex-grow bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <div class="w-full flex mx-auto gap-2">
+              <input
+                name="social"
+                type="text"
+                placeholder="What social media integration would you like to see?"
+                required
+                class="flex-grow bg-white tracking-tight bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+              />
+              <button
+                type="submit"
+                class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300"
+              >
+                Join Now
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
 
-            <!-- <section class="py-20">
-                <h2 class="text-3xl font-bold mb-10 text-center">How It Works</h2>
-                <ol class="list-decimal list-inside space-y-4 max-w-2xl mx-auto">
-                    <li class="text-lg">Select your favorite celebrity from our extensive list.</li>
-                    <li class="text-lg">Our AI collects and analyzes real data to create an authentic voice model.</li>
-                    <li class="text-lg">Receive a phone call from the AI-powered celebrity voice.</li>
-                    <li class="text-lg">Engage in a real-time conversation on various topics.</li>
-                </ol>
-            </section> -->
-
-
-
-            <!-- Waitlist Section -->
-            <section id="waitlist" class="py-20">
-                <h2 class="text-3xl font-bold mb-6 text-center">Bring Your Voice to Life Today</h2>
-                <p class="text-center mb-8">Start building your AI replica now and unlock a whole new way to engage with your audience while earning for every interaction.</p>
-                <form action="https://formspree.io/f/mdknvowk" method="POST"
-                    class="max-w-lg mx-auto flex flex-wrap gap-4 justify-center">
-                    <input name="email" type="email" placeholder="Enter your email" required
-                        class="flex-grow bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white">
-                        <div class="w-full flex mx-auto gap-4">
-                            <input name="social" type="text" placeholder="What social media integration would you like to see?" required
-                            class="flex-grow bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-white">
-                            <button type="submit"
-                                class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
-                                Join Now
-                            </button>
-                    </div>
-                </form>
-            </section>
-        </main>
-
-        <footer class="container mx-auto px-4 py-8 text-center text-white">
-            <p class="text-md">©️ 2024 SoundCast.AI. All rights reserved</p>
-            <a href="#" class="text-sm text-blue-500">Privacy Policy Terms of Service</a>
-        </footer>
+      <footer class="container mx-auto px-4 py-8 text-center text-white">
+        <p class="text-md">©️ 2024 SoundCast.AI. All rights reserved</p>
+        <a href="#" class="text-sm text-[#0000FF]"
+          >Privacy Policy Terms of Service</a
+        >
+      </footer>
     </div>
 
     <script>
-        function scrollToWaitlist() {
-            document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' });
-        }
+      function scrollToWaitlist() {
+        document
+          .getElementById("waitlist")
+          .scrollIntoView({ behavior: "smooth" });
+      }
 
-        function handleSubmit(event) {
-            event.preventDefault();
-            const email = event.target.querySelector('input[type="email"]').value;
-            console.log('Email submitted:', email);
-            alert('Thanks for joining our waitlist!');
-            event.target.reset();
-        }
+      function handleSubmit(event) {
+        event.preventDefault();
+        const email = event.target.querySelector('input[type="email"]').value;
+        console.log("Email submitted:", email);
+        alert("Thanks for joining our waitlist!");
+        event.target.reset();
+      }
     </script>
-</body>
-
+  </body>
 </html>
